@@ -1,0 +1,22 @@
+public class Recursion{
+	
+		public static void main(String[] args){
+			Alpha A = new Alpha();
+			System.out.println(A.RecurseMe());
+		}
+}
+
+
+class Alpha{
+	
+	static int RecursionController = 0;
+
+	public int RecurseMe(){
+	
+		
+		RecursionController++;
+		if (RecursionController <= 80) {return this.RecurseMe();}
+		return RecursionController;	
+	}
+
+}
